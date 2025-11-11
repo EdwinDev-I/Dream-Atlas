@@ -1,2 +1,11 @@
-      const container = document.querySelector(".js-container");
-      ReactDOM.createRoot(container).render('Dream Atlas');
+import Hero from './components/Hero'
+
+const App = () => {
+  return (
+    <>
+      <Hero />
+    </>
+  )
+}
+
+export default App;

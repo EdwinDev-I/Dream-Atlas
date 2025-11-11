@@ -1,0 +1,41 @@
+/*Header-sections*/
+#header {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-around;
+ gap: 6rem;
+ height: 17vh;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+.app-name {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.desktop-nav{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-around;
+ gap: 6rem;
+ height: 17vh;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+#hamburger-nav {
+  display: none;
+}
+
+.about,
+.explore {
+  font-size: 1.1rem;
+  color: black;
+}
+
+
+
+
