@@ -8,14 +8,17 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
   background-size: cover;
   background-position: center;
   opacity: 0;
   transform: scale(0.95);
   animation: pop-in 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   height: 100vh;
-  background: linear-gradient(to bottom, #312e81,#e06ea1);
+  background: linear-gradient(to bottom, #000428, #004e92, #1a237e);
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
 }
 
 @keyframes pop-in {
@@ -33,6 +36,22 @@ body {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 191, 255, 0.2) 0%, transparent 50%), 
+    radial-gradient(circle at 80% 20%, rgba(138, 43, 226, 0.15)0%, transparent 50%),
+     radial-gradient(circle at 50% 80%, rgba(0, 123, 255, 0.1)0%, transparent 60%);
+   pointer-events: none;
+   animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0.7;}
 }
 
 
