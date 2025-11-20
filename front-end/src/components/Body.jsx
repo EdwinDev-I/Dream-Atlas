@@ -17,7 +17,7 @@ function FootersSection() {
 function ExplanationsSection() {
   return(
     <>
-    <h2 className='text'>Why This Matters</h2>
+    <h2 className='explanation-text'>Why This Matters</h2>
     <div className='explanation-container'>
          <div className="explanation-card">
         <h3>For Dreams</h3>
