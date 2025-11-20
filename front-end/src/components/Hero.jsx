@@ -20,13 +20,16 @@ function MobileIcon() {
        </div>
        <div className={`menu-links ${iconIsOpen ? '' : 'open'}`}>
         <li>
-          <a href="#explore" onClick={toggleMenu}>Explore</a>
+          <a href="/explore-page" onClick={toggleMenu}>Explore</a>
           </li>
         <li>
-          <a href="#about" onClick={toggleMenu}>About</a>
+          <a href="/about-page" onClick={toggleMenu}>About</a>
           </li>
         <li>
-          <a href="#contact" onClick={toggleMenu}>Contact</a>
+          <a href="/contact-page" onClick={toggleMenu}>Contact</a>
+          </li>   
+        <li>
+          <a href="/privacy-page" onClick={toggleMenu}>Privacy</a>
           </li>   
        </div>
       </div>
@@ -47,13 +50,16 @@ function DesktopIcon({showPrompt, setShowPrompt}) {
     <>
      <div className="nav-link">
          <li>
-          <a href="#explore" className='nav-link1'>Explore</a>
+          <a href="/explore-page" className='nav-link1'>Explore</a>
           </li>
          <li>
-          <a href="#about" className='nav-link2'>About</a>
+          <a href="/about-page" className='nav-link2'>About</a>
           </li>
          <li>
-          <a href="#contact" className='nav-link3'>Contact</a>
+          <a href="/contact-page" className='nav-link3'>Contact</a>
+          </li>
+         <li>
+          <a href="/privacy-page" className='nav-link3'>Privacy</a>
           </li>
          <button className='btn-header'
           onClick={usePromptMessage}
@@ -73,7 +79,7 @@ function Hero() {
 
   return (
     <div id='header'>
-      <a href="../public/index.html"  className='logo'>
+      <a href="/"  className='logo'>
       <div className='icon-flex'>
         <Moon style={{transform:'scaleX(-1)', width:'25px'}}/><div>Dream Atlas</div>
       </div>

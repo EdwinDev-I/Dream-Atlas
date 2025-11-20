@@ -1,7 +1,7 @@
 import Hero from '../components/Hero'
 import Body from '../components/Body';
 import { useEffect } from 'react';
-import './Home.css'
+import './page-styles/Home.css'
 
 function Home() {
   useEffect(() => {

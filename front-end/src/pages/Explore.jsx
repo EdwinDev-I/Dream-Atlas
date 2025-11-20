@@ -1,7 +1,10 @@
-import React from 'react'
 
-export const Explore = () => {
-  return (
-    <div>Explore</div>
+function Explore() {
+  return(
+    <>
+     <div>Explore Page</div>
+    </>
   )
 }
+
+export default Explore;
