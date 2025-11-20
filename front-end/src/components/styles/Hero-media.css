@@ -31,4 +31,10 @@
     display: flex;
   }
 }
+@media screen and (max-width: 360px) {
+ #header {
+  padding-left: 15px;
+ padding-right: 25px;
+ }
+}
 

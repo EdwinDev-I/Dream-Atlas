@@ -1,17 +1,9 @@
-import Hero from './components/Hero'
-import './App.css';
+import Home from './pages/Home'
 
 const App = () => {
   return (
     <>
-     <div className='bubbles'>
-        <div className='bubble'></div>
-        <div className='bubble'></div>
-        <div className='bubble'></div>
-        <div className='bubble'></div>
-        <div className='bubble'></div>
-      </div>
-      <Hero />
+    <Home />
     </>
   )
 }

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import {Moon} from 'lucide-react'
+import PromptMessage from './PromptModal'
 import './styles/Hero.css'
 import './styles/Hero-media.css'
 
@@ -33,20 +35,33 @@ function MobileIcon() {
   )
 }
 
-function DesktopIcon() {
+function DesktopIcon({showPrompt, setShowPrompt}) {
+  function usePromptMessage() {
+   setShowPrompt(true)
+  }
+
+  function useClosePrompt() {
+    setShowPrompt(false)
+  }
   return(
     <>
      <div className="nav-link">
          <li>
-          <a href="#explore">Explore</a>
+          <a href="#explore" className='nav-link1'>Explore</a>
           </li>
          <li>
-          <a href="#about">About</a>
+          <a href="#about" className='nav-link2'>About</a>
           </li>
          <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" className='nav-link3'>Contact</a>
           </li>
-         <button className='btn-header'>Share Dream</button>
+         <button className='btn-header'
+          onClick={usePromptMessage}
+         >Share Dream</button>
+         <PromptMessage 
+          open={showPrompt}
+          onClose={useClosePrompt}
+         />
     </div>
     </>
   )
@@ -54,12 +69,19 @@ function DesktopIcon() {
 
 
 function Hero() {
+  const [showPrompt, setShowPrompt] = useState(false);
+
   return (
     <div id='header'>
       <a href="../public/index.html"  className='logo'>
-        <div>Dream Atlas</div>
+      <div className='icon-flex'>
+        <Moon style={{transform:'scaleX(-1)', width:'25px'}}/><div>Dream Atlas</div>
+      </div>
         </a>
-        <DesktopIcon />
+        <DesktopIcon 
+         showPrompt = {showPrompt}
+         setShowPrompt = {setShowPrompt}
+        />
         <MobileIcon />
     </div>
   )
