@@ -7,6 +7,7 @@ import About from './pages/About'
 import Privacy from './pages/Privacy'
 import Contact from './pages/Contact'
 
+
 const App = () => {
   return (
     <Router>
