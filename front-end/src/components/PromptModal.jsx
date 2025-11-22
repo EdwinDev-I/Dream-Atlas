@@ -1,4 +1,4 @@
-import {LogIn , UserPlus} from  'lucide-react';
+import {LogIn , UserPlus, XIcon} from  'lucide-react';
 import './styles/prompt.css'
 
 export default function PromptMessage({ open, onClose}) {
@@ -27,7 +27,7 @@ export default function PromptMessage({ open, onClose}) {
         </a>
       </div>
 
-      <button className='close-x' onClick={onClose}>x</button>
+      <button className='close-x' onClick={onClose}><XIcon/></button>
     </div>
   </div>
  );
