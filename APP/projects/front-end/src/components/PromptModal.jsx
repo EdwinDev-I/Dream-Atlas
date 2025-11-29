@@ -17,11 +17,11 @@ export default function PromptMessage({ open, onClose}) {
       <p>Please choose how you want to continue.</p>
 
       <div className='prompt-buttons'>
-        <a href='/login-page' className='login-btn'>
+        <a href='/Dream-Atlas|login-page' className='login-btn'>
           <LogIn size={18}/>
           Login
         </a>
-        <a href='/signup-page' className='signup-btn'>
+        <a href='/Dream-Atlas|signup-page' className='signup-btn'>
           <UserPlus size={18}/>
           Sign Up
         </a>

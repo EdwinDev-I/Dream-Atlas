@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+  .top-container {
+  padding-bottom: 120px;
+}
+}
+
+@media (max-width: 900px) {
+ .top-container {
+  padding-bottom: 120px;
+}
+}  
+
+@media (max-width: 600px) {
+ .top-container {
+  padding-bottom: 120px;
+}
+}

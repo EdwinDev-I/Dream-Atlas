@@ -20,16 +20,16 @@ function MobileIcon() {
        </div>
        <div className={`menu-links ${iconIsOpen ? '' : 'open'}`}>
         <li>
-          <a href="/explore-page" onClick={toggleMenu}>Explore</a>
+          <a href="/Dream-Atlas|explore-page" onClick={toggleMenu}>Explore</a>
           </li>
         <li>
-          <a href="/about-page" onClick={toggleMenu}>About</a>
+          <a href="/Dream-Atlas|about-page" onClick={toggleMenu}>About</a>
           </li>
         <li>
-          <a href="/contact-page" onClick={toggleMenu}>Contact</a>
+          <a href="/Dream-Atlas|contact-page" onClick={toggleMenu}>Contact</a>
           </li>   
         <li>
-          <a href="/privacy-page" onClick={toggleMenu}>Privacy</a>
+          <a href="/Dream-Atlas|privacy-page" onClick={toggleMenu}>Privacy</a>
           </li>   
        </div>
       </div>
@@ -50,16 +50,16 @@ function DesktopIcon({showPrompt, setShowPrompt}) {
     <>
      <div className="nav-link">
          <li>
-          <a href="/explore-page" className='nav-link1'>Explore</a>
+          <a href="/Dream-Atlas|explore-page" className='nav-link1'>Explore</a>
           </li>
          <li>
-          <a href="/about-page" className='nav-link2'>About</a>
+          <a href="/Dream-Atlas|about-page" className='nav-link2'>About</a>
           </li>
          <li>
-          <a href="/contact-page" className='nav-link3'>Contact</a>
+          <a href="/Dream-Atlas|contact-page" className='nav-link3'>Contact</a>
           </li>
          <li>
-          <a href="/privacy-page" className='nav-link3'>Privacy</a>
+          <a href="/Dream-Atlas|privacy-page" className='nav-link3'>Privacy</a>
           </li>
          <button className='btn-header'
           onClick={usePromptMessage}

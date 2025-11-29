@@ -1,5 +1,6 @@
 import {User2Icon, MailIcon, Lock , XIcon} from "lucide-react";
 import { useState } from "react";
+import {useNavigate} from "react-router-dom"
 import axios from 'axios'
 import './page-styles/signup.css'
 import './page-styles/signup-media.css'
@@ -9,6 +10,7 @@ function SignUp() {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   function tooglePassword() {
     if (!show) {
@@ -21,7 +23,9 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault()
     axios.post('http://localhost:3001/signup', {name, email, password})
-    .then(result => console.log(result))
+    .then(result => {console.log(result)
+     navigate('/Dream-Atlas|login-page');
+    })
     .catch(err => console.log(err))
   }
 
@@ -64,7 +68,7 @@ function SignUp() {
           </div>
           <button type="submit" className="btn">Sign Up</button>
           <div className="signup-register">
-            <p>Already have an account?<a href="/login-page" className="register-link">Login</a></p>
+            <p>Already have an account?<a href="/Dream-Atlas|login-page" className="register-link">Login</a></p>
           </div>
         </form>
       </div>
