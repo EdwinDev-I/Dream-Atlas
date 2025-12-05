@@ -1,0 +1,91 @@
+.top-container {
+  padding-bottom: 100px;
+}
+
+.explore-container {
+  margin: auto 60px;
+}
+
+.title {
+  font-size: 2.7em;
+  color: #00bfff;
+  text-align: start;
+}
+
+.tag-input-box {
+ position: relative;
+ width: 100%;
+ height: 50px;
+ margin: 30px 0;
+}
+
+.tag-input-box .icon {
+  position: absolute;
+  color: #87ceeb;
+  cursor: pointer;
+  bottom: 12px;
+  left: 12px;
+}
+
+.tag-input-box input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 600px;
+  border-radius: 10px;
+  border: 2px solid #0676a1;
+  flex-grow: 1;
+  background: transparent;
+  font-size: .9rem;
+  font-weight: 500;
+  outline: none;
+  color: #87ceeb;
+  box-shadow: inset 0 3px 8px rgba(8, 130, 211, 0.25);
+}
+
+.tag-input-box input::-webkit-input-placeholder {
+  color: #1a81aa;
+}
+
+.tags-container {
+
+}
+
+.tags-btn {
+  padding: 10px 12px;
+  margin-right: 12px;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: #032a50;
+  background-color: #0099ff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.10s ease;
+}
+
+.tags-btn:active {
+  background-color: #87ceeb;
+}
+
+.color-2 {
+  color: #0099ff;
+  background-color: #032a50;
+    border: none;
+  cursor: pointer;
+    padding: 10px 12px;
+  margin-right: 12px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.location {
+  display: flex;
+}
+
+.explore-dream-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}

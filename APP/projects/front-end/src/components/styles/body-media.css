@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .sd-btn {
+    padding: 15px 40px;
+  }
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+  .moon-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
