@@ -30,14 +30,36 @@
 }
 @media (max-width: 450px) {
  .tag-input-box input {
-  width: 270px;
+  width: 280px;
 }
+
+.region, .country {
+ font-size: 13px;
+}
+
+.location .date , .dot{
+  font-size: 13px;
+}
+
 }
 
 
-@media (max-width: 355px) {
+@media (max-width: 420px) {
  .tag-input-box input {
   width: 250px;
+}
+
+.region, .country {
+ font-size: 12px;
+}
+
+.location .date , .dot{
+  font-size: 12px;
+}
+
+.explore-container {
+  margin: auto 20px;
+  margin-bottom: 100px;
 }
 }
 

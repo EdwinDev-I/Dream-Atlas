@@ -4,12 +4,14 @@
 
 .explore-container {
   margin: auto 60px;
+  margin-bottom: 100px;
 }
 
 .title {
   font-size: 2.7em;
   color: #00bfff;
   text-align: start;
+  cursor: default;
 }
 
 .tag-input-box {
@@ -23,8 +25,8 @@
   position: absolute;
   color: #87ceeb;
   cursor: pointer;
-  bottom: 12px;
-  left: 12px;
+  bottom: 10px;
+  left: 8px;
 }
 
 .tag-input-box input {
@@ -46,10 +48,6 @@
 
 .tag-input-box input::-webkit-input-placeholder {
   color: #1a81aa;
-}
-
-.tags-container {
-
 }
 
 .tags-btn {
@@ -79,13 +77,74 @@
   margin-top: 10px;
 }
 
-.location {
-  display: flex;
-}
-
 .explore-dream-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 80px;
 }
+
+.dream-container {
+  background: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 20px;
+  max-width: 800px;
+}
+
+
+.location {
+  display: flex;
+}
+
+.region, .country {
+ color: #599de2;
+ white-space: nowrap;
+ margin-left: 4px;
+}
+
+.location .date , .dot{
+  color: #599de2;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+.location .dot {
+  margin-top: -4px;
+  font-weight: 600;
+}
+
+.dream-comment {
+  color: rgb(214, 213, 213);
+}
+
+.dream-tags-container {
+  display:flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.container-tags {
+  background: #032a50;
+  color: #1a81aa;
+  font-size: 12px;
+  display: flex;
+  padding: 5px 10px;
+  gap: 5px;
+  border-radius: 30px;
+  cursor: default;
+}
+
+.counter {
+  color: #00bfff;
+  margin-top: 10px;
+}
+
+
+

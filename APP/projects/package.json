@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "npm run dev --prefix back-end start",
-    "client": "npm run dev --prefix front-end dev",
+    "server": "npm run dev --prefix back-end server",
+    "client": "npm run dev --prefix front-end client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",

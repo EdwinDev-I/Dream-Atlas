@@ -51,7 +51,7 @@ function FeatureSection() {
       <div className="feature-card">
         <div className="feature-icon">📊</div>
         <h3>Pattern Recognition</h3>
-        <p>Explore recurring symbols, seasonal trends, amd universal themes in human dreaming thhrough deep data analysis.</p>
+        <p>Explore recurring symbols, seasonal trends, amd universal themes in human dreaming through deep data analysis.</p>
       </div>
       <div className="feature-card">
         <div className="feature-icon">🤝</div>
