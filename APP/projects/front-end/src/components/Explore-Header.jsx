@@ -40,7 +40,7 @@ function ExploreInput({dreamTags , dreams, setDreams, initialDreams}) {
 
   return(
    <>
-    <h2 className="title"><Moon style={{width:'30px', height:"30px"}}/> Explore Dreams</h2>
+    <h1 className="title"><Moon className='moon-icon' style={{width:'30px', height:"30px"}}/> Explore Dreams</h1>
      <div className="tag-input-box">
       <span className="icon">
       <Search

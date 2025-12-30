@@ -23,10 +23,10 @@ function MobileIcon() {
           <a href="/Dream-Atlas|explore-page" onClick={toggleMenu}>Explore</a>
           </li>
         <li>
-          <a href="/Dream-Atlas|about-page" onClick={toggleMenu}>About</a>
+          <a href="/Dream-Atlas|about-page" onClick={toggleMenu}>About Us</a>
           </li>
         <li>
-          <a href="/Dream-Atlas|contact-page" onClick={toggleMenu}>Contact</a>
+          <a href="/Dream-Atlas|contact-page" onClick={toggleMenu}>Contact Us</a>
           </li>   
         <li>
           <a href="/Dream-Atlas|privacy-page" onClick={toggleMenu}>Privacy</a>
@@ -53,10 +53,10 @@ function DesktopIcon({showPrompt, setShowPrompt}) {
           <a href="/Dream-Atlas|explore-page" className='nav-link1'>Explore</a>
           </li>
          <li>
-          <a href="/Dream-Atlas|about-page" className='nav-link2'>About</a>
+          <a href="/Dream-Atlas|about-page" className='nav-link2'>About Us</a>
           </li>
          <li>
-          <a href="/Dream-Atlas|contact-page" className='nav-link3'>Contact</a>
+          <a href="/Dream-Atlas|contact-page" className='nav-link3'>Contact Us</a>
           </li>
          <li>
           <a href="/Dream-Atlas|privacy-page" className='nav-link3'>Privacy</a>

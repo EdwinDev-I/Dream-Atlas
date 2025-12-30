@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Hero from "../components/Hero";
 import ExploreBody from "../components/Explore-Body";
 import ExploreInput from "../components/Explore-Header";
@@ -144,6 +144,25 @@ function Explore() {
 
   const [dreams, setDreams] = useState(initialDreams);
 
+   useEffect(() => {
+       if (typeof window === 'undefined') return;
+       const arrow = document.querySelector('.arrow');
+       if (!arrow) return;
+       const onScroll = () => {
+         if (window.scrollY > 30) arrow.classList.add('visible');
+         else arrow.classList.remove('visible');
+       };
+       // init
+       onScroll();
+       window.addEventListener('scroll', onScroll, { passive: true });
+       return () => window.removeEventListener('scroll', onScroll);
+     }, []);
+   
+     const scrollToTop = (e) => {
+       e.preventDefault();
+       window.scrollTo({ top: 0, behavior: 'smooth' });
+     };
+
   return(
     <>
     <div className="top-container">
@@ -162,6 +181,7 @@ function Explore() {
       setDreams={setDreams}
      />
     </div>
+      <a className="arrow" onClick={scrollToTop} aria-label="Scroll to top">↑</a>
     </>
   )
 }

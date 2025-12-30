@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 function ExploreBody({dreams, setDreams}) {
   const today = dayjs().format('YYYY-M-D');
 
-  const [reaction, setReaction] = useState(() => {
+  let [reaction, setReaction] = useState(() => {
     const saved = localStorage.getItem("dreamReactions");
     return saved ? JSON.parse(saved) : {};
   });
@@ -17,47 +17,71 @@ function ExploreBody({dreams, setDreams}) {
   }, [reaction])
    
   const handleReact = (dreamId, emoji) => {
-    const float = {
-      id: Date.now() + Math.random(),
-      emoji,
-      left: Math.random() * 80 + 10
-    };
+    const hasReacted = reaction[dreamId]?.[emoji] === 1;
 
-    setDreams(prev => 
-      prev.map(dream => 
-        dream.id === dreamId
-         ? {
-          ...dream,
-          floating: [...dream.floating, float]
-         }
-         : dream
-      )
-    );
+    if (hasReacted) {
+      // remove the user's reaction (set to 0) and remove one floating emoji of that type
+      setReaction(prev => ({
+        ...prev,
+        [dreamId]: {
+          ...prev[dreamId],
+          [emoji]: ""
+        }
+      }));
 
-    console.log(dreamId)
+      setDreams(prev =>
+        prev.map(dream => {
+          if (dream.id !== dreamId) return dream;
+          const idx = dream.floating.map(f => f.emoji).lastIndexOf(emoji);
+          if (idx === -1) return dream;
+          const newFloating = [...dream.floating.slice(0, idx), ...dream.floating.slice(idx + 1)];
+          return {
+            ...dream,
+            floating: newFloating
+          };
+        })
+      );
+    } else {
+      // add the user's reaction (set to 1) and add a floating emoji that will be removed after 1.5s
+      const float = {
+        id: Date.now() + Math.random(),
+        emoji,
+        left: Math.random() * 80 + 10
+      };
 
-    setReaction(prev => ({
-      ...prev,
-      [dreamId]: {
-        ...prev[dreamId],
-        [emoji]: (prev[dreamId]?.[emoji] || 0) + 1
-      }
-    }))
-
-    setTimeout(() => {
       setDreams(prev =>
         prev.map(dream =>
           dream.id === dreamId
-           ? {
-            ...dream,
-            floating: dream.floating.filter( (f) => {
-              f.id !== float.id
-            })
-           }
-           : dream
+            ? {
+                ...dream,
+                floating: [...dream.floating, float]
+              }
+            : dream
         )
-      )
-    }, 1500);
+      );
+
+      setReaction(prev => ({
+        ...prev,
+        [dreamId]: {
+          ...prev[dreamId],
+          [emoji]: 1
+        }
+      }));
+
+      setTimeout(() => {
+        setDreams(prev =>
+          prev.map(dream =>
+            dream.id === dreamId
+              ? {
+                  ...dream,
+                  floating: dream.floating.filter(f => f.id !== float.id)
+                }
+              : dream
+          )
+        );
+      }, 1500);
+    }
+     console.log(reaction)
   }
 
   return(
