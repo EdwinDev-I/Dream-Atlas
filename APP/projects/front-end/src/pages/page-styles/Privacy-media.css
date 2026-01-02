@@ -1,0 +1,22 @@
+@media (max-width: 1100px) {
+  .facts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.points {
+  display: flex;
+  gap: 1rem;
+  margin: auto ;
+  margin-bottom: 20px;
+}
+}
+
+@media (max-width: 410px) {
+  .privacy-container {
+  margin: auto 20px;
+  margin-bottom: 100px;
+}
+}

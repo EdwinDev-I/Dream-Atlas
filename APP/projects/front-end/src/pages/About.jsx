@@ -185,7 +185,7 @@ function AboutBody({showPrompt, setShowPrompt}) {
         <div className="quest-wrd">Questions? Ideas? Want to collaborate?</div>
         <div className="links">
           <a 
-          href="mailto:nondhim@gmail.com?subject=Hello%20dream%20world&body=I%20want%20to%20get%20started%20on%20dream%20sharing%20with%20you!!"
+          href="mailto:nondhim@gmail.com"
           target="_blank"
           className="email-link"
           >hello@dreamatlas.com</a>
