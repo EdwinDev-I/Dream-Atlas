@@ -191,7 +191,8 @@ function AboutBody({showPrompt, setShowPrompt}) {
           >hello@dreamatlas.com</a>
           <span className="dots">.</span>
           <a 
-           href=""
+           href="https://x.com/DreamAtlasio"
+           target="_blank"
            className="twit-link"
           >Twitter</a>
           <span className="dots">.</span>

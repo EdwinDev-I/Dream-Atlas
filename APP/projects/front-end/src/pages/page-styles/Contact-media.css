@@ -1,0 +1,48 @@
+@media (max-width: 1100px) {
+  .contact-info-container,
+  .quest-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.option {
+  font-size: 14px;
+  padding: 10px;
+  width: auto;
+}
+
+}
+
+@media (max-width: 410px) {
+  .contact-container {
+  margin: auto 20px;
+  margin-bottom: 100px;
+}
+}
+
+@media (max-width: 500px) {
+  .location-container {
+  background: rgba(11, 66, 114, 0.2);
+  border-radius: 10px;
+  border: 1px solid #055d7a;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: auto;
+  margin: auto;
+}
+
+.response-container {
+  background: rgba(50, 151, 240, 0.2);
+  border-radius: 10px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: auto;
+  margin: auto;
+  margin-top: 50px;
+}
+}
