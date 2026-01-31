@@ -1,3 +1,24 @@
+.back-home {
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(135deg, #2ac6fa , #095e80);
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  transition: all 0.3s ease ;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .login-container {
   width: 400px;
   height: 500px;

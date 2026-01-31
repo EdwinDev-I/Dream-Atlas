@@ -1,4 +1,4 @@
-import {User2Icon, MailIcon, Lock , XIcon} from "lucide-react";
+import {User2Icon, MailIcon, Lock , XIcon, ArrowLeft} from "lucide-react";
 import { useState } from "react";
 import {useNavigate} from "react-router-dom"
 import axios from 'axios'
@@ -31,8 +31,14 @@ function SignUp() {
 
   return(
     <>
+    <div 
+     className="back-home"
+     onClick={() => navigate('/')}
+    >
+      <ArrowLeft/> 
+      <div>Back to Home</div>
+    </div>
     <div className="signup-container">
-      <span className="icon-close"><a href="/"><XIcon /></a></span>
        <div className="form-box signup">
         <h2>Sign Up</h2>
         <form action="#" onSubmit={handleSubmit}>

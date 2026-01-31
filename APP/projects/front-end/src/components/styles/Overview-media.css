@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+  .month-count {
+    font-size: 12px;
+  }
+
+  .month-name {
+    font-size: 10px;
+  }
+
+  .themes-header h2 ,
+  .activity-title h2{
+    font-size: 20px;
+  }
+}

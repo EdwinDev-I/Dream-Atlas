@@ -1,4 +1,4 @@
-import { MailIcon, Lock , XIcon} from "lucide-react";
+import { MailIcon, Lock , XIcon, ArrowLeft} from "lucide-react";
 import { useState } from "react";
 import {useNavigate} from "react-router-dom"
 import axios from 'axios'
@@ -25,7 +25,7 @@ function Login() {
       .then(result => {
         console.log(result)
         if(result.data === 'Success') {
-         navigate('/Dream-Atlas|home-page');
+         navigate('/Dream-Atlas|user-dashboard');
         }
       })
       .catch(err => console.log(err))
@@ -33,8 +33,14 @@ function Login() {
 
   return(
     <>
+    <div 
+     className="back-home"
+     onClick={() => navigate('/')}
+    >
+      <ArrowLeft/> 
+      <div>Back to Home</div>
+    </div>
      <div className="login-container">
-      <span className="icon-close"><a href="/"><XIcon /></a></span>
       <div className="form-box login">
         <h2>Login</h2>
         <form action="#" onSubmit={handleSubmit}>

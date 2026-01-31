@@ -1,0 +1,209 @@
+.settings-container,
+.settings-container2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeInUp 1.6s ease;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.type-container,
+.share-location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-setting,
+.privacy-settings {
+  color: #87ceeb;
+}
+
+.name-section,
+.email-section,
+.bio-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.name-section label,
+.email-section label,
+.bio-section label {
+  margin-bottom: 12px;
+  color: #00bfff;
+  text-align: start;
+}
+
+.name-section input,
+.email-section input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  border: 2px solid #2692bd;
+  flex-grow: 1;
+  background: transparent;
+  font-size: .9rem;
+  font-weight: 500;
+  outline: none;
+  color: #a2d5e9;
+  box-shadow: inset 0 3px 8px rgba(8, 130, 211, 0.25);
+}
+
+.bio-section textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  border: 2px solid #2692bd;
+  max-height: 200px;
+  min-height: 100px;
+  resize: vertical;
+  box-sizing: border-box;
+  background: transparent;
+  font-size: .9rem;
+  font-weight: 500;
+  outline: none;
+  color: #a2d5e9;
+  box-shadow: inset 0 3px 8px rgba(8, 130, 211, 0.25);
+}
+
+.name-section input::-webkit-input-placeholder,
+.email-section input::-webkit-input-placeholder,
+.bio-section textarea::-webkit-input-placeholder {
+  color: #4e94af;
+}
+
+.reset-btn {
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  background: #74cdf3;
+  color: #036e92;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+
+.reset-btn:hover {
+  background: #b3d9ff;
+  box-shadow: 0 15px 40px rgba(0, 153, 255, 0.6);
+}
+
+.settings-container2 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.privacy-type-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.settings-title {
+  color: #74cdf3;
+  font-weight: 600;
+}
+
+.settings-des {
+  color: #00bfff;
+}
+
+.share-btn {
+   color: #032a50;
+  background-color: #0099ff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-btn:active {
+  background-color: #87ceeb;
+}
+
+.share-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 153, 255, 0.6);
+}
+
+.handle-data-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(50, 151, 240, 0.2);
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: 50%;
+  margin: 0 300px;
+}
+
+.handle-data-container h2 {
+  color: #87ceeb; 
+  text-align: start;
+}
+
+.data-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.download-btn {
+  opacity: 90%;
+  color: #b3d9ff;
+  background: #0472bb;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover,
+.account-delete-btn:hover {
+  opacity: 80%;
+}
+
+.down-icon,
+.account-delete-icon {
+  margin-bottom: -3px;
+  margin-right: 10px;
+}
+
+.account-delete-btn {
+  opacity: 90%;
+  color: #fca5a5;
+  background: #dc2626;
+  border: 2px solid #ef4444;
+  border-radius: 6px;
+  padding: 11px 0;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

@@ -1,8 +1,30 @@
 @media (max-width: 900px) {
+  .back-home {
+  position: fixed;
+  font-size: 14px;
+  top: 10px;
+  left: 22px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(135deg, #2ac6fa , #095e80);
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  transition: all 0.3s ease ;
+  overflow: hidden;
+  cursor: pointer;
+}
+
   .signup-container {
     width: 80%;
     height: auto;
-    margin-top: 6%;
+    margin-top: 8%;
     padding: 24px;
     border-radius: 16px;
     box-shadow: 0 12px 30px rgba(3, 110, 182, 0.45);
@@ -16,10 +38,42 @@
 }
 
 @media (max-width: 600px) {
+  .back-home {
+  position: fixed;
+  font-size: 14px;
+  top: 10px;
+  left: 22px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(135deg, #2ac6fa , #095e80);
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  transition: all 0.3s ease ;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+  .signup-container {
+    width: 80%;
+    height: auto;
+    margin-top: 15%;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(3, 110, 182, 0.45);
+    display: flex;
+    align-items: center;
+  }
+
   .signup-container {
     width: 92%;
     height: auto;
-    margin-top: 4%;
     padding: 18px;
     border-radius: 12px;
     box-shadow: 0 10px 24px rgba(3, 110, 182, 0.35);

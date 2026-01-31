@@ -21,7 +21,7 @@ const App = () => {
        <Route path='/Dream-Atlas|about-page' element={<About />}/>
        <Route path='/Dream-Atlas|contact-page' element={<Contact/>} />
        <Route path='/Dream-Atlas|privacy-page' element={<Privacy/>} />
-       <Route path='/Dream-Atlas|home-page' element={<Home />} />
+       <Route path='/Dream-Atlas|user-dashboard' element={<Home />} />
        <Route path='/Dream-Atlas|share-dream' element={<ShareDream />} />
 
        {/*404 Page*/}

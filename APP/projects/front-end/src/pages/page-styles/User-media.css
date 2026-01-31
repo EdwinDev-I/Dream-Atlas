@@ -1,0 +1,41 @@
+@media (max-width: 1200px) {
+  .user-hero {
+  padding-bottom: 120px;
+}
+}
+
+@media (max-width: 900px) {
+ .user-hero {
+  padding-bottom: 120px;
+}
+}
+
+@media (max-width: 600px) {
+ .user-hero {
+  padding-bottom: 120px;
+}
+
+.user-name .username{ 
+  white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.log-out div{ 
+  display: none;
+}
+}
+
+@media (max-width: 410px) {
+  .user-container {
+  margin: auto 20px;
+  margin-bottom: 100px;
+}
+}
+

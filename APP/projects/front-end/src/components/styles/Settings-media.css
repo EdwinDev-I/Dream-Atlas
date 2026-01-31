@@ -1,0 +1,112 @@
+@media (max-width: 1100px) {
+ .handle-data-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(50, 151, 240, 0.2);
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: 70%;
+  margin: 0 140px;
+}
+
+}
+
+@media (max-width: 900px) {
+ .handle-data-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(50, 151, 240, 0.2);
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: 30%;
+  margin: 0 160px;
+}
+}
+@media (max-width: 940px) {
+ .handle-data-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(50, 151, 240, 0.2);
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: 70%;
+  margin: 0 120px;
+}
+}
+
+@media (max-width: 780px) {
+ .handle-data-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(50, 151, 240, 0.2);
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: 70%;
+  margin: 0 100px;
+}
+}
+
+@media (max-width: 600px) {
+  .handle-data-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(50, 151, 240, 0.2);
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: 80%;
+  margin: 0 50px;
+}
+}
+
+@media (max-width: 500px) {
+ .handle-data-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(50, 151, 240, 0.2);
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 20px;
+  width: 100%;
+  margin: 0 4px;
+}
+
+.bio-section textarea {
+  min-height: 80px;
+  font-size: 13px;
+}
+}

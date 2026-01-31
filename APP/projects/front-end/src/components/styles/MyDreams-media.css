@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+  .my-dream-title h3 {
+  color: #a7e5fa;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.edit-dream,
+.delete-dream {
+  margin-left: 5px;
+  
+}
+}

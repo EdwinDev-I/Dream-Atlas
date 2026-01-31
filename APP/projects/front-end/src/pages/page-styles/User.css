@@ -1,0 +1,142 @@
+.user-container {
+  margin: auto 60px;
+  margin-bottom: 100px;
+}
+
+.user-hero {
+  margin-bottom: 20px;
+  padding-bottom: 60px;
+}
+
+.user-top-container {
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.top-icon {
+ font-size: 30px;
+ height: 52px;
+ width: 52px;
+ border-radius: 60px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ line-height: 1;
+ background: linear-gradient(135deg, #00bfff, #1a81aa);
+ min-width: 52px;
+ min-height: 52px;
+ flex-shrink: 0;
+ cursor: default;
+}
+
+.user-name .username{
+ font-size: 1.3rem;
+ max-width: 150px;
+ color: #87ceeb;
+}
+
+.username {
+  max-width: clamp(120px, 40vw, 200px);
+}
+
+.user-name div {
+  color: #168bb9;
+  white-space: wrap;
+}
+
+.log-out {
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: rgba(50, 151, 240, 0.2);
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.log-out:hover {
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+}
+
+
+.dash-views {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tab {
+  display: flex;
+  color: #1a81aa;
+  cursor: pointer;
+  position: relative;
+}
+
+.dash-views::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #1a81aa;
+  
+}
+
+.tab.active {
+  color: #9ddaf1;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00bfff;
+
+}
+
+.tab div {
+  font-weight: 600;
+}
+
+.tab-icon {
+  margin-right: 10px;
+}
+
+.tab-label {
+  font-weight: 600;
+}
+
+.tab-content {
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab.active .tab-icon {
+  filter: drop-shadow( 0 0 6px rgba(183, 188, 190, 0.8));
+}
+
