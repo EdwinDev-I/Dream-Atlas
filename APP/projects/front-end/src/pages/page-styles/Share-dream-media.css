@@ -1,0 +1,50 @@
+@media (max-width: 1200px) {
+  .share-dream-card {
+  margin-top: 150px;
+}
+
+.share-dream-section {
+  margin: auto 50px;
+  margin-top: 50px;
+}
+}
+
+@media (max-width: 600px) {
+  .share-dream-container {
+  margin: auto 30px;
+  margin-bottom: 100px;
+}
+
+  .share-dream-card {
+  margin-top: 120px;
+}
+
+.link-to-dashboard { 
+  padding: 10px;
+  font-size: 12px;
+  left: 20px;
+  top: 35px;
+}
+
+.share-arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.share-dream-section {
+  margin: auto;
+  margin-top: 50px;
+}
+
+textarea {
+  min-height: 80px;
+  font-size: 13px;
+}
+
+}
+
+@media (max-width:350px) {
+ .submit-dream-btn {
+  font-size: 13px;
+ }
+}

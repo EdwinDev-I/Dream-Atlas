@@ -42,6 +42,7 @@
   background: transparent;
   font-size: .9rem;
   font-weight: 500;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
   outline: none;
   color: #87ceeb;
   box-shadow: inset 0 3px 8px rgba(8, 130, 211, 0.25);
@@ -49,6 +50,7 @@
 
 .tag-input-box input::-webkit-input-placeholder {
   color: #1a81aa;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
 }
 
 .tags-btn {

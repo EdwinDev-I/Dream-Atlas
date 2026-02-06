@@ -1,0 +1,195 @@
+.link-to-dashboard {
+  position: fixed;
+  display: flex;
+  left: 40px;
+  top: 40px;
+  gap: 0.5rem;
+  color: #fff;
+  font-weight: 500;
+  background: linear-gradient(135deg, #2ac6fa , #095e80);
+  border-radius: 10px;
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(1, 84, 139, 0.6);
+  padding: 15px;
+  transition: all 0.3s ease ;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 153, 255, 0.4);
+  animation: fadeInUp 1.6s ease;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.link-to-dashboard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.link-to-dashboard:hover::before {
+  left: 100%;
+}
+
+.link-to-dashboard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 153, 255, 0.6);
+  font-size: 17px;
+}
+
+.share-dream-container {
+  margin: auto 60px;
+  margin-bottom: 100px;
+}
+
+.share-dream-card {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.share-dream-title {
+  font-size: 2.7em;
+  color: #00bfff;
+}
+
+.share-dream-section {
+  margin: auto 200px;
+  margin-top: 50px;
+}
+
+.share-dream-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background: transparent;
+  border: 1px solid #00bfff;
+  border-radius: 20px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 15px 40px rgba(3, 110, 182, 0.6);
+  padding: 30px;
+}
+
+.dream-description {
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dream-description label {
+  color: #b3d9ff;
+  font-weight: 600;
+}
+
+.dream-description textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  border: 2px solid #2692bd;
+  max-height: 200px;
+  min-height: 100px;
+  resize: vertical;
+  box-sizing: border-box;
+  background: transparent;
+  font-size: .9rem;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
+  font-weight: 500;
+  outline: none;
+  color: #a2d5e9;
+  box-shadow: inset 0 3px 8px rgba(8, 130, 211, 0.25);
+}
+
+.dream-description textarea::-webkit-input-placeholder {
+  color: #4e94af;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
+}
+
+.tags-section,
+.emotions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.share-title {
+  color: #b3d9ff;
+  font-weight: 600;
+}
+
+.share-dream-tag,
+.share-dream-emotion {
+   display:flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.share-tag,
+.share-emotion {
+  background: #2692bd;
+  color: #b3d9ff;
+  font-size: 12px;
+  display: flex;
+  padding: 5px 10px;
+  gap: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.location-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.location-section input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  border: 2px solid #2692bd;
+  flex-grow: 1;
+  background: transparent;
+  font-size: .9rem;
+  font-weight: 500;
+  outline: none;
+  color: #a2d5e9;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
+  box-shadow: inset 0 3px 8px rgba(8, 130, 211, 0.25);
+}
+
+.location-section input::-webkit-input-placeholder {
+  color: #4e94af;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
+}
+
+.submit-dream-btn {
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  background:  #036e92;
+  color: #74cdf3;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 90%;
+}
+
+.submit-dream-btn:hover {
+  opacity: 80%;
+  box-shadow: 0 15px 40px rgba(0, 153, 255, 0.6);
+}
+
+.share-icon {
+  margin-bottom: -3px;
+  margin-right: 10px;
+}
