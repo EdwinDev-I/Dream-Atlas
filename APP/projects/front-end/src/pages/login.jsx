@@ -1,4 +1,4 @@
-import { MailIcon, Lock , XIcon, ArrowLeft} from "lucide-react";
+import { MailIcon, ArrowLeft, EyeClosed, Eye} from "lucide-react";
 import { useState } from "react";
 import {useNavigate} from "react-router-dom"
 import axios from 'axios'
@@ -54,7 +54,7 @@ function Login() {
             <label>Email</label>
           </div>
           <div className="input-box">
-            <span className="icon"><Lock size={20} onClick={tooglePassword} /></span>
+            <span className="icon">{show?<Eye onClick={tooglePassword} size={20} />: <EyeClosed onClick={tooglePassword} size={20}/>}</span>
             <input 
              type={show ? "text":"password"} 
              required
